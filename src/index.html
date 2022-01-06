@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dictionary builder</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<body>
+
+<div class="body">
+
+    <table class="file-info">
+        <tr>
+            <td>
+                <a href="#" class="button28" onclick="browse()">Открыть</a>
+            </td>
+            <td>
+                <a href="#" class="button28 hidden" id="start" onclick="start()">Начать</a>
+            </td>
+            <td>
+                <a href="#" class="button28 hidden right_float" id="save" onclick="save()">Сохранить</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="right">
+                <b id="fileLabel"></b>
+            </td>
+            <td class="left">
+                <a id="fileName"></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h3 id="message"></h3>
+                <h3 id="message2"></h3>
+            </td>
+        </tr>
+        <tr style="display: inline-block">
+            <td class="right">
+                <input type="checkbox" id="lessNumber">
+            </td>
+            <td class="left">
+                <b>Убрать строки длиной до
+                    <input type="number" value="8" min="2" max="99" class="number-input" onchange="numberCount = value">
+                    символов </b>
+            </td>
+        </tr>
+        <tr>
+            <td class="right">
+                <input type="checkbox" id="Duplicate">
+            </td>
+            <td class="left">
+                <b>Удалить дубликаты</b>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script src='./renderer.js'></script>
+</body>
+</html>
